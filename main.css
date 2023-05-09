@@ -1,5 +1,5 @@
 :root {
-    --primary: #0EAE7DC;
+    --primary: #EAE7DC;
     --secondary:  #000000;
     --tertiary: #3b6dd9;
     --headings: 'Reenie Beanie';
@@ -43,6 +43,10 @@ section{
     justify-content: space-between;
     align-items: center;
     z-index: 100%;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
 
 a{
@@ -348,4 +352,38 @@ span{
     margin-top: 2rem;
     cursor: pointer;
 }
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--tertiary);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding:  .8rem;
+    background: var(--secondary);
+    border-radius: .8rem;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--secondary);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--primary);
+}
+
 
