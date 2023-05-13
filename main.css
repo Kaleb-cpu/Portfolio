@@ -1,8 +1,8 @@
 :root {
-    --primary: #EAE7DC;
-    --secondary:  #000000;
-    --tertiary: #3b6dd9;
-    --headings: 'Reenie Beanie';
+    --primary: #DDC3A5;
+    --secondary:  #201E20;
+    --tertiary:   #9c7a53;
+    --headings: 'Unica One';
     --navbar: 'Inconsolata';
     --body: 'Barlow';
 }
@@ -51,6 +51,7 @@ section{
 
 a{
     color: var(--secondary);
+    font-family: var(--headings);
 }
 
 .logo{
@@ -64,12 +65,14 @@ a{
     margin-left: 2rem;
     color: var(--secondary);
     transition:.4s;
+    font-family: var(--navbar);
 }
 
 .navbar a:hover,
 .navbar a.active
  {
-    color: var(--primary);
+    font-weight: bolder;
+    font-size: 2.5rem;
 }
 
 #menu-icon {
@@ -96,6 +99,7 @@ a{
 
 span{
     color: var(--tertiary);
+    font-family: Space Mono;
 }
 
 .home-content h1{
@@ -172,7 +176,7 @@ span{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: rgb(222, 219, 219);
+    background: #d6b995;
 }
 
 .about-img img{
@@ -213,8 +217,8 @@ span{
 }
 
 .services-container .services-box {
-    flex: 1 1 30rem;
-    background: rgb(222, 219, 219);
+    flex: 1 1;
+    background: var(--tertiary);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -223,13 +227,14 @@ span{
 }
 
 .services-container .services-box:hover {
-    border-color: var(--tertiary);
+    border-color: var(--secondary);
     transform: scale(1.02);
     cursor: pointer;
 }
 .services-box i {
-    font-size: 7rem;
-    color: var(--tertiary);
+    font-size: 8rem;
+    color: var(--primary);
+    
 }
 
 .services-box h3 {
@@ -237,14 +242,20 @@ span{
 }
 
 .services-box p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 1rem 0 3rem;
+    
+}
+
+.services-box a {
+    border: 2px solid var(--secondary);
+    background: var(--primary);
 }
 
 /* portfolio design */
 
 .portfolio {
-    background: gray;
+    background: #d6b995;
 }
 
 .portfolio h2 {
@@ -346,15 +357,16 @@ span{
 .contact form textarea {
     width: 100%;
     padding: 1.5rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: var(--secondary);
-    background: rgb(149, 145, 145);
+    background: whitesmoke;
     border-radius: .8rem;
     margin: .7rem;
 }
 
 .contact form .input-box input {
     width: 48%;
+    
 }
 
 .contact form textarea {
@@ -362,8 +374,14 @@ span{
 }
 
 .contact form .btn {
+    font-size: 1.9rem;
     margin-top: 2rem;
     cursor: pointer;
+}
+
+.contact form .btn:hover{
+    color: var(--primary);
+    transform: scale(1.2);
 }
 
 /* footer */
