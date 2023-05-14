@@ -32,12 +32,19 @@ section{
     padding: 10rem 9% 2rem;
 }
 
+.mainLogo {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+
 .header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1rem 9%;
     background: var(--tertiary);
     display: flex;
     justify-content: space-between;
@@ -47,11 +54,6 @@ section{
 
 .header.sticky {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
-}
-
-a{
-    color: var(--secondary);
-    font-family: var(--headings);
 }
 
 .logo{
