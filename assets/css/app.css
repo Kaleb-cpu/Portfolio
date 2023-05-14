@@ -32,14 +32,17 @@ section{
     padding: 10rem 9% 2rem;
 }
 
-
+.navbar {
+    padding-right: 5rem;
+}
 
 .header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
+    padding: 1rem;
+    padding-left: 5rem;
     background: var(--tertiary);
     display: flex;
     justify-content: space-between;
