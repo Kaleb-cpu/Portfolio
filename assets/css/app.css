@@ -461,11 +461,15 @@ span{
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 1rem 3%;
+        padding: 3rem 2%;
         background: var(--tertiary);
         border-top: .1rem solid var(--secondary);
         box-shadow: 0 .5rem 1rem var(--tertiary);
         display: none;
+    }
+
+    .logo img {
+        width: 50px;
     }
 
     .services-container {
