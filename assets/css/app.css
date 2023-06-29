@@ -335,6 +335,9 @@ span{
 }
 
 /* contact */
+.contact {
+    background-color: #d6b995;
+}
 
 .contact h2 {
     margin-bottom: 3rem;
@@ -443,6 +446,10 @@ span{
         padding-bottom: 7rem;
     }
 
+    .sideHustle {
+        padding-bottom: 7rem;
+    }
+
     .contact {
         min-height: auto;
     }
@@ -523,6 +530,8 @@ span{
     .portfolio-container {
         grid-template-columns: repeat(1 1fr);
     }
+
+    
 }
 
 @media (max-width:617px){
@@ -538,6 +547,11 @@ span{
 
     .contact form .input-box input {
         width: 100%;
+    }
+
+    .sideHustleChild {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -558,4 +572,13 @@ span{
         text-align: center;
         margin-top: 2rem;
     }
+
+    
+}
+
+/* Side hustle */
+
+.sideHustleChild {
+    display: flex;
+    justify-content: space-around;
 }
