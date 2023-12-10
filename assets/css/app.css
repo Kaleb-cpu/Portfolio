@@ -1,7 +1,7 @@
 :root {
-    --primary: #DDC3A5;
-    --secondary:  #201E20;
-    --tertiary:   #9c7a53;
+    --primary: #000000;
+    --secondary:  #c0bdbd;
+    --tertiary:   #425d6f;
     --headings: 'Unica One';
     --navbar: 'Inconsolata';
     --body: 'Barlow';
@@ -176,7 +176,7 @@ span{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: #d6b995;
+    background: #B1DDF1;
 }
 
 .about-img img{
@@ -200,6 +200,10 @@ span{
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+}
+
+.sideHustle .about-content {
+    color: var(--secondary);
 }
 
 /* services */
@@ -255,7 +259,7 @@ span{
 /* portfolio design */
 
 .portfolio {
-    background: #d6b995;
+    background: #B1DDF1;
 }
 
 .portfolio h2 {
@@ -336,7 +340,7 @@ span{
 
 /* contact */
 .contact {
-    background-color: #d6b995;
+    background-color: var(--secondary);
 }
 
 .contact h2 {
