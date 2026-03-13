@@ -1,20 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Caleb B — Developer Portfolio
+
+Modern personal portfolio built with **Next.js (App Router)**, **TailwindCSS**, **TypeScript**, and **Framer Motion**, styled to match a premium minimal Dribbble-like aesthetic.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies (already installed if you just scaffolded the project):
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
+
+## Build for production
+
+```bash
+npm run build
+npm start
+```
+
+## Project structure
+
+- **`src/app/`**: App Router routes, metadata, global styles
+- **`src/components/`**: Reusable UI + page sections
+  - **`src/components/nav/`**: Navbar + mobile menu
+  - **`src/components/sections/`**: Hero, About, Services, Skills, Projects, Open Source, Contact
+  - **`src/components/ui/`**: Premium card/button/container primitives
+- **`src/lib/`**:
+  - **`site.ts`**: Your content (services, skills, projects, links)
+  - **`github.ts`**: GitHub API fetch helpers (public, no token)
+
+## Customizing content
+
+Edit your personal content in:
+
+- `src/lib/site.ts`
+
+## Notes
+
+- The **GitHub** section pulls public data from `https://api.github.com/users/Kaleb-cpu` and displays a lightweight contribution grid via a public SVG.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
