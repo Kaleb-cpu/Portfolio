@@ -36,6 +36,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        {/* Google Calendar Appointment Scheduling */}
+        <link
+          href="https://calendar.google.com/calendar/scheduling-button-script.css"
+          rel="stylesheet"
+        />
+      </head>
       <body className="min-h-dvh bg-background text-foreground antialiased">
         {children}
       </body>

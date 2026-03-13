@@ -7,12 +7,17 @@ import { Projects } from "@/components/sections/projects";
 import { Services } from "@/components/sections/services";
 import { Skills } from "@/components/sections/skills";
 import { Container } from "@/components/ui/container";
+import { GOOGLE_APPOINTMENTS_URL } from "@/lib/calendar";
 import { PROJECTS, SERVICES, SITE, SKILLS } from "@/lib/site";
 
 export default function Home() {
   return (
     <div className="bg-background">
-      <Navbar name={SITE.name} ctaHref="#contact" ctaLabel="Book A Call" />
+      <Navbar
+        name={SITE.name}
+        ctaHref={GOOGLE_APPOINTMENTS_URL}
+        ctaLabel="Book A Call"
+      />
       <main>
         <Hero name={SITE.name} title={SITE.title} />
         <About bio={SITE.bio} />
